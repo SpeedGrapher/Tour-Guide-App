@@ -6,4 +6,7 @@ package database_layer_package;
 public class DatabaseRead {
 
 //    This is a test
+    public DatabaseRead(){
+        
+    }
 }
