@@ -16,7 +16,7 @@ import java.sql.Statement;
 public class databaseConnection extends AsyncTask<String, String, Boolean> {
 
 
-    private Connection connection;
+    private static Connection connection;
     private Statement statement;
     private ResultSet resultSet;
     private boolean valid = false;
@@ -121,6 +121,10 @@ public class databaseConnection extends AsyncTask<String, String, Boolean> {
 
 
         return passComparison.equals(password);
+    }
+
+    public static Connection getConnection(){
+        return connection;
     }
 
 
